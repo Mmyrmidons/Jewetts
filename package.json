@@ -1,0 +1,26 @@
+{
+   "name": "jewetts",
+   "version": "2.0.0",
+   "description": "Jewwett's Cheese House",
+   "domain": "www.jewettscheese.com",
+   "main": "deerman.js",
+   "scripts": {
+      "test": "echo \"Error: no test specified\" && exit 1"
+   },
+   "repository": "BrotherGrilka",
+   "author": "Dunc",
+   "license": "ISC",
+   "dependencies": {
+      "body-parser": "^1.19.0",
+      "certbot": "^1.0.0",
+      "express": "^4.18.1",
+      "express-handlebars": "^3.1.0",
+      "pm2": "^5.1.2",
+      "yargs": "^17.2.1"
+   },
+   "manners": {
+      "node": "^14.18.0",
+      "jquery": "^3.6.0",
+	  "sudoUserSetupForPort80": "https://www.digitalocean.com/community/tutorials/how-to-use-pm2-to-setup-a-node-js-production-environment-on-an-ubuntu-vps"
+   }
+}

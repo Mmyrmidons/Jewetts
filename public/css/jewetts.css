@@ -1,0 +1,26 @@
+/*
+orange = #FFA500
+deeppink = #FF1493
+yellowgreen = #9ACD32
+goldenrod = #DAA520
+skyblue = #87CEEB
+
+chartreuse = #7FFF00
+magenta = #FF00FF
+dodgerblue = #1E90FF
+gold = #FFD700
+white = doy
+*/
+
+
+
+body * {
+	font-family: 'Pangolin';
+}
+
+.cheeseHouse {
+	background: goldenrod;
+	margin: 0 auto;
+	width: 1024px;
+	position: relative;
+}
