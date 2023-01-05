@@ -3,7 +3,7 @@
    "version": "2.0.0",
    "description": "Jewwett's Cheese House",
    "domain": "www.jewettscheese.com",
-   "main": "deerman.js",
+   "main": "jewetts.js",
    "scripts": {
       "test": "echo \"Error: no test specified\" && exit 1"
    },

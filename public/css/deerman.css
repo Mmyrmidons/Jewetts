@@ -1,0 +1,595 @@
+/*
+orange = #FFA500
+deeppink = #FF1493
+yellowgreen = #9ACD32
+goldenrod = #DAA520
+skyblue = #87CEEB
+
+chartreuse = #7FFF00
+magenta = #FF00FF
+dodgerblue = #1E90FF
+gold = #FFD700
+white = doy
+*/
+
+
+
+body * {
+	font-family: 'Pangolin';
+}
+
+.f1 {
+	padding: 21px 120px;
+}
+
+a {
+	color: black;
+}
+
+.butchersBlock {
+	margin: 0 auto;
+	width: 1024px;
+	position: relative;
+}
+
+.header {
+	height: 350px;
+	width: 1024px;
+	margin: 24px auto 0;
+	position: relative;
+}
+
+.header .social {
+	float: left;
+}
+
+.sun {
+	display: block;
+	position: absolute;
+	top: -10px;
+	left: -70px;
+}
+
+.blackFacebook {
+	position: absolute;
+	width: 60px;
+	height: 60px;
+	bottom: 0px;
+	right: 370px;
+}
+
+.menu li:hover {
+	background-color: var(--ozziYellow);
+}
+
+.menu {
+	position: absolute;
+	left: 6px;
+	top: 170px;
+}
+
+.menu img {
+/*	width: 20px;
+	height: 40px;
+*/}
+
+.hackney {
+	position: relative;
+	left: 170px;
+	width: 800px;
+}
+
+.hackney > div {
+	height: 100px;
+}
+
+.hackney .farmers {
+	position: relative;
+	left: 100px;
+}
+
+.hackney .place {
+	left: 70px;
+	position: relative;
+}
+
+.hackney div div {
+	float: left;
+	position: relative;
+	height: 100%;
+	background: url("/img/grass/grass.png") no-repeat;
+	background-position: 10px 75px;
+	background-size: 30px 15px;
+}
+
+.hackney div div.apostrophe,
+.hackney div div.m {
+	background-image: none;
+}
+
+.hackney div div.e0 {
+	background-position: 10px 40px;
+	background-size: 24px 15px;
+}
+
+.hackney div div.f {
+	background-position: 10px 8px;
+}
+
+.hackney div div.a0,
+.hackney div div.a1 {
+	background-position: 10px 60px;
+	background-size: 24px 15px;
+}
+
+.hackney div div.r0,
+.hackney div div.r1 {
+	background-position: 10px 41px;
+}
+
+.hackney div div.p {
+	background-position: 10px 40px;
+}
+
+.hackney div div.c {
+	background-size: 24px 15px;
+}
+
+
+/*.hackney .lawn {
+	background: url("/img/grass/grass.png") no-repeat;
+	background-position: 10px 75px;
+	background-size: 30px 15px;
+}
+
+.hackney .a0.lawn {
+	background-position: 10px 60px;
+}
+*/
+.hackney .rogueChicken {
+	height: 20px;
+	width: 20px;
+	position: absolute;
+	top: 2px;
+	left: 10px;
+}
+
+.hackney .s0 .rogueChicken,
+.hackney .s1 .rogueChicken,
+.hackney .r0 .rogueChicken {
+	left: 23px;
+}
+
+.hackney div div.nestingChicken {
+	background: url("/img/farmanimals/chicken.png") no-repeat 23px 84px;
+	background-size: 20px 20px;
+}
+
+.hackney img {
+	position: relative;
+	width: 52px;
+	height: 80px;
+	top: 20px;
+	left: 0;
+}
+
+.hackney .o {
+	left: -9px;
+}
+
+.hackney .e0 {
+	left: -16px;
+}
+
+.hackney .apostrophe {
+	left: -27px;
+}
+
+.hackney .s0 {
+	left: -66px;
+}
+
+.hackney .f {
+}
+
+.hackney .a0 {
+	left: -15px;
+}
+
+.hackney .r0 {
+	left: -20px;
+}
+
+.hackney .m {
+	left: -11px;
+}
+
+.hackney .e1 {
+	left: -5px;
+}
+
+.hackney .r1 {
+	left: -10px;
+}
+
+.hackney .s1 {
+	left: -10px;
+}
+
+.hackney .p {
+}
+
+.hackney .l {
+	left: -8px;
+}
+
+.hackney .a1 {
+	left: -18px;
+}
+
+.hackney .c {
+	left: -18px;
+}
+
+.hackney .e2 {
+	left: -18px;
+}
+
+.phone {
+	position: absolute;
+	top: 0;
+	right: 0;
+	width: 242px;
+}
+
+.phone img {
+	width: 60px;
+	height: 60px;
+}
+
+.phone p {
+	background-color: var(--ozziYellow);
+	padding: 3px;
+	margin-right: 6px;
+}
+
+.phoneLink {
+	cursor: default;
+}
+
+
+.social {
+	position: absolute;
+	bottom: 0;
+	right: 0;
+}
+
+.freshest {
+	float: left;
+	padding-right: 18px;
+}
+
+.freshest h2 {
+	padding-bottom: 18px;
+}
+
+.napkins {
+}
+
+.formError {
+	border: 1px solid firebrick;
+}
+
+.inner :not(:first-child) {
+	display: none;
+}
+
+.orderForm {
+	width: 360px;
+	height: 188px;
+	position: absolute;
+	bottom: 14px;
+	right: 30px;
+}
+
+.orderForm a {
+	width: 160px;
+	display: block;
+	float: right;
+	border: 3px solid black;
+}
+
+.orderForm > div {
+	float: right;
+	padding-right: 6px;
+}
+
+.orderForm h3 {
+	display: block;
+	width: 136px;
+	padding: 12px 6px 0 0;
+	text-align: right;
+}
+
+.orderForm div img {
+	float: right;
+}
+
+.facebook > div {
+	width: 50%;
+	float: left;	
+}
+
+.facebook {
+}
+
+.messages {
+	padding-bottom: 24px;
+}
+
+i {
+	padding-right: 6px;
+}
+
+.messages > div {
+	float: left;
+	width: 33%;
+	padding: 36px 12px;
+}
+
+.messages p {
+	padding: 6px 0;
+}
+
+.pricing {
+	display: block;
+	float: left;
+}
+
+.tally {
+	display: none;
+}
+
+
+.dmFooter {
+	background-color: black;
+}
+
+#dm #hcontainer.dmHeader,
+#dm #hcontainer .text {
+	background-color: white;
+	color: black;
+}
+
+.services h2 {
+	text-align: center;
+}
+
+.services a {
+	display: block;
+}
+
+.services .wellKnown {
+	text-align: center;
+	margin: 12px 36px;
+}
+
+.partyPlatters {
+	padding: 24px 0;
+}
+
+.partyPlatters img {
+	display: block;
+	float: left;
+	width: 50%;
+}
+
+.partyPlatters p {
+	padding: 12px 0;
+}
+
+.partyPlatters .platterWords {
+	float: left;
+	width: 50%;
+	padding: 0 24px;
+}
+
+.worldCup > * {
+	float: left;
+}
+
+.worldCup .aamp {
+	padding: 0 12px 12px 0;
+}
+
+.contactUs {
+}
+
+.contactUs h2 {
+	padding: 18px 0 12px;
+}
+
+.contactUs table {
+	float: left;
+	width: 50%;
+}
+
+.contactUs td {
+	padding: 4px 3px;
+	display: inline-block;
+	font-size: 18px;
+}
+
+.contactUs .label {
+	width: 152px;
+}
+
+.contactUs input {
+	width: 221px;
+}
+
+.contactUs textarea {
+	width: 377px;
+	height: 190px;
+}
+
+.contactUs .formStatusMessageGuardian {
+	height: 130px;
+}
+
+.contactUs .formStatusMessage {
+	height: 90px;
+	display: none;
+}
+
+.contactUs .formStatusMessage img {
+	display: block;
+	padding-bottom: 6px;
+}
+
+.contactUs .formStatusMessage label {
+	display: block;
+}
+
+.contactUs .formStatusMessage p {
+	padding: 3px 0px;
+}
+
+.contactUs .formsSubmitButton {
+	background: url("/img/farmanimals/steer.png") no-repeat;
+	background-color: white;
+	background-size: 150px 90px;
+	color: white;
+	font-size: 16px;
+	border: none;
+	padding: 30px 86px 43px 0px;
+	cursor: pointer;
+	display: inline-block;
+}
+
+.pasture {
+	width: 100%;
+}
+
+.pasture:last-of-type {
+	height: 60x ;
+}
+
+.pasture .stalactites {
+	height: 30px;
+	width: 100%;
+	background-image: url(/img/farmanimals/rocks.png);
+	background-repeat: repeat-x;
+	background-size: 300px 16px;
+}
+
+.pasture .animal {
+	width: 100px;
+	height: 60px;
+	background-position: bottom left;
+	position: absolute;
+	transition: all 0.3s;
+}
+
+.facingBackwards {
+	transform: scaleX(-1);
+}
+
+.pasture div {
+	position: relative;
+	background-repeat: no-repeat;
+}
+
+.pasture div.grass {
+	background-image: url(/img/grass/grass.png);
+	background-repeat: repeat-x;
+	background-size: 100px 15px;
+	background-position: bottom;
+	width: 100%;
+	height: 60px;
+}
+
+.pasture div.cow {
+	background-image: url(/img/farmanimals/cow.png);
+	background-size: 80px 48px;
+}
+
+.pasture div.steer {
+	background-image: url(/img/farmanimals/steer.png);
+/*	background-size: 50px 30px;
+*/}
+
+.pasture div.goat {
+	background-image: url(/img/farmanimals/goat.png);
+	background-size: 30px 30px;
+}
+
+.pasture div.pig {
+	background-image: url(/img/farmanimals/pig.png);
+	background-size: 58px 36px;
+}
+
+.pasture div.sheep {
+	background-image: url(/img/farmanimals/sheep.png);
+	background-size: 40px 30px;
+}
+
+.pasture div.rooster {
+	width: 22px;
+	background-image: url(/img/farmanimals/rooster.png);
+	background-size: 22px 22px;
+}
+
+.pasture div.chicken {
+	width: 20px;
+	background-image: url(/img/farmanimals/chicken.png);
+	background-size: 20px 20px;
+}
+
+.pasture div.duck {
+	background-image: url(/img/farmanimals/duck.png);
+	background-size: 40px 29px;
+}
+
+.footer {
+	background-color: black;
+	text-align: center;
+	color: white;
+}
+
+.footer * {
+	padding: 3px;
+}
+
+.footer h3 {
+	padding: 36px 6px 12px;
+}
+
+.footer a {
+	display: block;
+	color: white;
+	text-decoration: none;
+}
+
+.footer img {
+	padding: 6px;
+	width: 40px;
+	height: 40px;
+}
+
+:root {
+	--grass: rgb(163, 203, 42);
+	--: rgb(228, 192, 36);
+	--rock: rgb(145, 84, 54);
+	--darkPig: rgb(226, 144, 152);
+	--pig: rgb(234, 165, 171);
+	--lightPig: rgb(245, 205, 206);
+	--goat: rgb(191, 157, 118);
+	--duckFeet: rgb(221, 106, 80);
+	--sheepWool: rgb(193, 180, 164);
+	--facebookBlue: rgb(66, 103, 178);
+/*	black; */
+	
+	--ozziYellow: rgb(252, 217, 70);
+	}
+

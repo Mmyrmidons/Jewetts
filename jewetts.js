@@ -5,7 +5,7 @@ const bodyParser = require('body-parser')
 const fs = require('fs')
 const args = require('yargs').argv
 const handlebars = require('express-handlebars').create({
-	defaultLayout: 'anni-kins',
+	defaultLayout: 'ozzi',
 	helpers: {
 		section: function(name, options) {
 			if (!this._sections)
@@ -28,18 +28,18 @@ app.use(bodyParser.json())
 app.use(bodyParser.urlencoded({extended: true}))
 app.use(express.static(__dirname + '/public'))
 
-// app.use(function(req, res, next) {
-// 	if (req.headers.host == "localhost" || req.secure)
-// 		next()
-// 	else
-// 		res.redirect("https://" + req.headers.host.replace(/\d+$/, securePort))
-// })
+app.use(function(req, res, next) {
+	if (req.headers.host == "localhost" || req.secure)
+		next()
+	else
+		res.redirect("https://" + req.headers.host.replace(/\d+$/, securePort))
+})
 
 app.get('/', function(req, res) {
     res.render('index')
 })
 
-app.get('/about', function(req, res) {nnne
+app.get('/about', function(req, res) {
    res.render('about')
 })
 
@@ -98,26 +98,26 @@ app.use(function(err, req, res, next) {
 	res.render('500')
 })
 
-// try {
-// 	const privateKey = fs.readFileSync('/etc/letsencrypt/live/' + pjson.domain + '/privkey.pem', 'utf8');
-// 	const certificate = fs.readFileSync('/etc/letsencrypt/live/' + pjson.domain + '/cert.pem', 'utf8');
-// 	const ca = fs.readFileSync('/etc/letsencrypt/live/' + pjson.domain + '/chain.pem', 'utf8');
-//
-// 	const credentials = {
-// 		key: privateKey,
-// 		cert: certificate,
-// 		ca: ca
-// 	}
-//
-// 	const httpsServer = https.createServer(credentials, app);
-//
-// 	httpsServer.listen(securePort, () => {
-// 		console.log('Listening for secure Deerman requests from port ' + securePort)
-// 	})
-// } catch(error) {
-// 	console.log("Secure Deerman error = " + error)
-// } finally {
+try {
+	const privateKey = fs.readFileSync('/etc/letsencrypt/live/' + pjson.domain + '/privkey.pem', 'utf8');
+	const certificate = fs.readFileSync('/etc/letsencrypt/live/' + pjson.domain + '/cert.pem', 'utf8');
+	const ca = fs.readFileSync('/etc/letsencrypt/live/' + pjson.domain + '/chain.pem', 'utf8');
+
+	const credentials = {
+		key: privateKey,
+		cert: certificate,
+		ca: ca
+	}
+
+	const httpsServer = https.createServer(credentials, app);
+
+	httpsServer.listen(securePort, () => {
+		console.log("Listening for secure Jewett's Cheese House requests from port " + securePort)
+	})
+} catch(error) {
+	console.log("Secure Jewett's Cheese House error = " + error)
+} finally {
 	app.listen(port, function() {
    		console.log("Listening for Jewett's Cheese House requests from port " + port)
 	})
-// }
+}
